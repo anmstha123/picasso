@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Picaso</title>
+  </head>
+  <body id="body">
+    <!-- The top navigation bar -->
+    <div class="topnav">
+      <!-- Project name = Picasso -->
+      <a class="active" href="#home"><h1>Picasso</h1></a>
+      <!-- Form in Modal -->
+      <button class="AddProject" id="myBtn">
+        <span>&#43;</span> Add Project(Modal)
+      </button>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <!-- The close button -->
+          <span class="close">&times;</span>
+          <div class="Form">
+            <h1>Project Form</h1>
+          </div>
+          <!-- Form -->
+          <div class="container">
+            <form action="" id="Form">
+              <div class="alert">Form sent</div>
+              <label for="Pname">Project Name &emsp;</label>
+              <input
+                type="text"
+                id="ProjectName"
+                placeholder="Your Project Name"
+              />
+              <br />
+              <label for="Address">Address &emsp;&emsp;&ensp;&ensp;</label>
+              <input
+                type="text"
+                id="Address"
+                placeholder="Address of the Project"
+              />
+              <br />
+              <label for="Manager">Project Manager</label>
+              <input
+                type="text"
+                id="ProjectManager"
+                placeholder="Name of Project Manager"
+              />
+              <br />
+              <label for="Material">Matirials Used &ensp;</label>
+              <input
+                type="text"
+                id="MatsUsed"
+                placeholder="Name of Materials Used"
+              />
+              <br />
+              <input type="submit" value="Submit"/>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Projects</button>
+        <div class="dropdown-content" id="dropdown-content">
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="server.js"></script>
+    <script src="node.js"></script>
+  </body>
+</html>
